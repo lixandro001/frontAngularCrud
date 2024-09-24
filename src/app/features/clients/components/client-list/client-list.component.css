@@ -1,0 +1,43 @@
+
+
+
+/* Estilos generales */
+.add-client-button-container {
+  text-align: right;
+  margin-bottom: 20px; /* Espacio entre el botón y la tabla */
+}
+
+table {
+  width: 700px;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+/* Estilo para pantallas grandes (desktop) */
+@media (min-width: 768px) {
+  table {
+    max-width: 800px; /* Ancho fijo en desktop */
+  }
+
+  .add-client-button-container {
+    max-width: 800px;
+    margin: 0 auto 20px auto; /* Centra el botón y la tabla */
+  }
+}
+
+/* Estilo para pantallas pequeñas (mobile) */
+@media (max-width: 767px) {
+  table {
+    max-width: 100%; /* En móvil, ocupa todo el ancho disponible */
+    padding: 0 10px; /* Agrega padding en los lados */
+  }
+
+  .add-client-button-container {
+    max-width: 100%; /* El botón también ocupa todo el ancho */
+    padding: 0 10px; /* Ajusta el espacio lateral */
+  }
+
+  button {
+    width: 100%; /* El botón ocupa todo el ancho en móvil */
+  }
+}

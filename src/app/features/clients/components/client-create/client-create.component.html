@@ -1,0 +1,23 @@
+<h2>Agregar Cliente</h2>
+<form #clientForm="ngForm" (ngSubmit)="onSubmit(clientForm)">
+  <mat-form-field appearance="fill">
+    <mat-label>Nombre</mat-label>
+    <input matInput placeholder="Nombre" [(ngModel)]="client.name" name="name" required>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Email</mat-label>
+    <input matInput placeholder="Email" [(ngModel)]="client.email" name="email" required type="email">
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Teléfono</mat-label>
+    <input matInput placeholder="Teléfono" [(ngModel)]="client.phone" name="phone" required type="tel">
+  </mat-form-field>
+
+  <!-- <button mat-raised-button color="primary" type="submit" [disabled]="clientForm.invalid">Agregar Cliente</button> -->
+  <button mat-raised-button color="primary" type="submit" [disabled]="clientForm.invalid">
+    {{ isEditMode ? 'Actualizar Cliente' : 'Agregar Cliente' }}
+  </button>
+
+</form>

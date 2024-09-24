@@ -1,0 +1,32 @@
+ /* app.component.css */
+html, body {
+  height: 100%; /* Asegura que el html y body ocupen toda la pantalla */
+  margin: 0; /* Elimina cualquier margen por defecto */
+  padding: 0; /* Elimina relleno por defecto */
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  background-color: #f5f5f5; /* Color de fondo suave */
+}
+
+router-outlet {
+  display: flex; /* Flexbox para el centrado */
+  justify-content: center; /* Centrado horizontal */
+  align-items: center; /* Centrado vertical */
+}
+
+/* Elimina cualquier borde no deseado en los elementos */
+* {
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+
+
+.content-container {
+  display: flex;
+  justify-content: center; /* Centrado horizontal */
+  align-items: center;     /* Centrado vertical */
+  min-height: 50vh;       /* Asegura que el contenedor tenga el 100% del alto de la ventana */
+  padding: 20px;
+}

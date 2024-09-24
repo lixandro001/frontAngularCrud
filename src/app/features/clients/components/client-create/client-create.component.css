@@ -1,0 +1,11 @@
+form {
+  display: flex;
+  flex-direction: column; /* Para que los elementos estén en columnas */
+  gap: 20px; /* Espacio entre los campos del formulario */
+  max-width: 400px; /* Limitar el ancho del formulario */
+  margin: 0 auto; /* Centrando el formulario en la página */
+}
+
+button {
+  align-self: center; /* Centrar el botón en el formulario */
+}
